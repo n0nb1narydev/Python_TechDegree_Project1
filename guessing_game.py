@@ -7,7 +7,7 @@ best = 10
 
 def start_game(best_score):
     print("==*==*==*==*==*==*==*==*==*==*==*==*==*==*==*==\n      Welcome to the Number Guessing Game!\n==*==*==*==*==*==*==*==*==*==*==*==*==*==*==*==")
-    print("Let's see you beat the best score of {} guesses!".format(best_score))
+    print("Can you beat the best score of {} guesses?".format(best_score))
     answer = random.randint(1,10)
     tries = 0
     guess = 0
@@ -45,7 +45,7 @@ def restart_game(best_score):
         elif play_again.lower() == "n":
             print("Thanks for playing!")
         else:
-            print("Please enter a Y or N.")
+            print("Please enter a Y for yes or N for no.")
             restart_game(best)
 
 start_game(best)
