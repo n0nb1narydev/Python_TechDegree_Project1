@@ -18,7 +18,6 @@ def start_game(best_score):
             guess = int(input("Please enter a number between 1 and 10: "))
             if guess > 10 or guess < 1:
                 raise ValueError("Enter a valid number between 1 and 10")
-
         except ValueError as err:
             print("Enter a valid number between 1 and 10")
         else:
